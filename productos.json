@@ -1,14 +1,14 @@
 [
 	{
-		"nombre": "Café",
+		"nombre": "Original Coffee",
 		"precio": 35
 	},
 	{
-		"nombre": "Café con leche",
+		"nombre": "Original Coffee and milk",
 		"precio": 35
 	},
 	{
-		"nombre": "Café sin cafeína",
+		"nombre": "Original Coffee NC",
 		"precio": 35
 	},
 	{
@@ -16,15 +16,15 @@
 		"precio": 40
 	},
 	{
-		"nombre": "Café oscuro",
+		"nombre": "Dark Coffee",
 		"precio": 45
 	},
 	{
-		"nombre": "Café con caramelo",
+		"nombre": "Caramel Coffee",
 		"precio": 50
 	},
 	{
-		"nombre": "Café con calabaza",
+		"nombre": "Pumpkin Coffee",
 		"precio": 50
 	},
 	{
