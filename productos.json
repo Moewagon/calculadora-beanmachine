@@ -1,0 +1,94 @@
+[
+	{
+		"nombre": "Café",
+		"precio": 35
+	},
+	{
+		"nombre": "Café con leche",
+		"precio": 35
+	},
+	{
+		"nombre": "Café sin cafeína",
+		"precio": 35
+	},
+	{
+		"nombre": "Chocolate Albean",
+		"precio": 40
+	},
+	{
+		"nombre": "Café oscuro",
+		"precio": 45
+	},
+	{
+		"nombre": "Café con caramelo",
+		"precio": 50
+	},
+	{
+		"nombre": "Café con calabaza",
+		"precio": 50
+	},
+	{
+		"nombre": "Café capuccino",
+		"precio": 45
+	},
+	{
+		"nombre": "Café irlandés",
+		"precio": 45
+	},
+	{
+		"nombre": "Café jamaiquino",
+		"precio": 45
+	},
+	{
+		"nombre": "Café tricolor",
+		"precio": 45
+	},
+	{
+		"nombre": "Café tribu",
+		"precio": 45
+	},
+	{
+		"nombre": "Churros de Bean Machine",
+		"precio": 35
+	},
+	{
+		"nombre": "Pretzel de Café",
+		"precio": 35
+	},
+	{
+		"nombre": "Galleta de café",
+		"precio": 20
+	},
+	{
+		"nombre": "Croissant",
+		"precio": 35
+	},
+	{
+		"nombre": "Banana Split",
+		"precio": 40
+	},
+	{
+		"nombre": "Muffin",
+		"precio": 40
+	},
+	{
+		"nombre": "Waffles",
+		"precio": 40
+	},
+	{
+		"nombre": "Hotcakes",
+		"precio": 40
+	},
+	{
+		"nombre": "Tarta Bean Bean",
+		"precio": 45
+	},
+	{
+		"nombre": "Tarta de manzana",
+		"precio": 45
+	},
+	{
+		"nombre": "Tarta de arándanos",
+		"precio": 45
+	}
+]

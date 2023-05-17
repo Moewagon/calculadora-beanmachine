@@ -1,0 +1,76 @@
+body {
+  background-color: #1b1c1e;
+  color: #f7f7f7;
+}
+
+.navbar-inverse {
+  background-color: #212529;
+  border-color: #292b2c;
+}
+
+.list-group-item {
+  background-color: #212529;
+  border-color: #292b2c;
+  color: #f7f7f7;
+}
+
+.precio {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.texto {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  float: right;
+}
+
+.descuento {
+  margin-top: 20px;
+}
+
+.well {
+  background-color: #212529;
+  border-color: #292b2c;
+  color: #f7f7f7;
+}
+
+#calculator-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#descuento-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#descuento-container input {
+  width: 20%;
+}
+
+#lista-productos {
+  padding-top: 22px;
+  width: 60%;
+}
+
+#lista-pedidos {
+  width: 35%;
+}
+
+.main {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pedido-card {
+  width: 50%;
+  padding: 10px 10px;
+  background-color: #286090;
+  color: white;
+  margin-bottom: 10px;
+}
