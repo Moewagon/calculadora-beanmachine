@@ -6,24 +6,29 @@ body {
 .navbar-inverse {
   background-color: #212529;
   border-color: #292b2c;
+  height: 70px;
 }
 
 .list-group-item {
+  display: flex;
   background-color: #212529;
   border-color: #292b2c;
   color: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
 
 .precio {
-  font-weight: bold;
-  margin-left: 10px;
+  font-weight: normal;
+   /* margin-left: 10px;*/
 }
 
 .texto {
   margin-left: 10px;
   margin-right: 10px;
   width: 200px;
-  float: right;
+  /*float: right;*/
 }
 
 .descuento {
@@ -70,7 +75,28 @@ body {
 .pedido-card {
   width: 50%;
   padding: 10px 10px;
-  background-color: #286090;
-  color: white;
+  background-color: #212529;
+  border-color: #292b2c;
+  color: #f7f7f7;
   margin-bottom: 10px;
+  border: 1.5px #292b2c solid;
+  border-radius: 4px;
+}
+
+.numero {
+  font-weight: bold;
+}
+
+.icono {
+  width: 60px;
+}
+
+.navbar-brand {
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.h3 {
+  vertical-align: middle;
 }

@@ -37,10 +37,10 @@ async function getProductos() {
 
   productos.forEach((producto) => {
 
-    let itemList = document.createElement("li")
+    let itemList = document.createElement("div")
     listado.appendChild(itemList)
     itemList.classList.add('list-group-item')
-    itemList.innerHTML = `${producto.nombre}<span class='precio'>$ ${producto.precio.toFixed(2)}</span><input class='texto price-producto form-control' data-nombre='${producto.nombre}' data-precio=${producto.precio} type='number' value='0'>`
+    itemList.innerHTML = `<span class='precio'>${producto.nombre} $<span class='numero'>${producto.precio.toFixed(2)}</span></span><input class='texto price-producto form-control' data-nombre='${producto.nombre}' data-precio=${producto.precio} type='number' value='0'>`
 
 
   })
@@ -53,10 +53,10 @@ async function getCombos() {
 
   combos.forEach((producto) => {
 
-    let itemList = document.createElement("li")
+    let itemList = document.createElement("div")
     listado.appendChild(itemList)
     itemList.classList.add('list-group-item')
-    itemList.innerHTML = `${producto.nombre}<span class='precio'>$ ${producto.precio.toFixed(2)}</span><input class='texto price-producto form-control' data-nombre='${producto.nombre}' data-precio=${producto.precio} type='number' value='0'>`
+    itemList.innerHTML = `<span class='precio'>${producto.nombre} $<span class='numero'>${producto.precio.toFixed(2)}</span></span><input class='texto price-producto form-control' data-nombre='${producto.nombre}' data-precio=${producto.precio} type='number' value='0'>`
 
   })
 }
