@@ -48,6 +48,10 @@
 		"precio": 45
 	},
 	{
+		"nombre": "Agua",
+		"precio": 22
+	},
+	{
 		"nombre": "Churros de Bean Machine",
 		"precio": 35
 	},
