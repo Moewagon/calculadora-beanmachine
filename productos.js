@@ -97,7 +97,7 @@ window.onload = async () => {
     pedido.forEach(producto => {
       divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio} $<p>`
     })
-    divPedido.innerHTML += `<p>Total del pedido: ${total} $<p>`
+    divPedido.innerHTML += `<p>Total del pedido: ${total} $ <br><br><button class="btn"><i class="bi bi-trash"></i></button></i><p>`
     listaPedidos.appendChild(divPedido)
 
     let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent)
