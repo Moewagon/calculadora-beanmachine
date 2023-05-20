@@ -32,6 +32,13 @@ async function getCombos() {
   });
 }
 
+function eliminarDiv(boton) {
+  var divPadre = boton.parentNode; //el padre del boton es un <p>
+  var divAbuelo = divPadre.parentNode; //el abuelo si es el div que interesa
+  var divFinal = divAbuelo.parentNode; //para borrarlo necesito a su padre
+  divFinal.removeChild(divAbuelo);
+}
+
 window.onload = async () => {
   await getProductos();
   await getCombos();
@@ -87,8 +94,5 @@ window.onload = async () => {
     precioTotal.textContent = `PRECIO TOTAL = $ ${total.toFixed(2)}`;
   });
 
-  function eliminarDiv(boton) {
-    var divPadre = boton.parentNode;
-    divPadre.parentNode.removeChild(divPadre);
-  }
+  
 };

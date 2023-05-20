@@ -110,3 +110,25 @@ body {
 .btn:hover{
   background-color: #121314;
 }
+
+.botonborrar{
+  background-color: #212529;
+  border: 1.5px #292b2c solid;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle; 
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.botonborrar:hover{
+  background-color: #121314;
+}
