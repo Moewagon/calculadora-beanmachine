@@ -37,6 +37,14 @@ function eliminarDiv(boton) {
   var divAbuelo = divPadre.parentNode; //el abuelo si es el div que interesa
   var divFinal = divAbuelo.parentNode; //para borrarlo necesito a su padre
   divFinal.removeChild(divAbuelo);
+  var listaPedido = document.getElementById("lista-pedidos");
+  var arrayTotales = listaPedido.getElementsByClassName("pedido-card-total");
+  console.log(arrayTotales);
+  var sumaTotales = 0;
+  for (var i=0; i<arrayTotales.length; i++){
+    sumaTotales += parseInt(arrayTotales[i].innerHTML);
+  }
+  document.getElementById("total-pedidos").innerHTML=sumaTotales;
 }
 
 window.onload = async () => {
@@ -82,7 +90,7 @@ window.onload = async () => {
       divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio} $<p>`;
     });
 
-    divPedido.innerHTML += `<p>Total del pedido: ${total} $<br><br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
+    divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span> $<br><br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
     listaPedidos.appendChild(divPedido);
 
     let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent);
