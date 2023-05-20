@@ -11,7 +11,7 @@ async function getProductos() {
       2
     )}</span></span><input class='texto price-producto form-control' data-nombre='${
       producto.nombre
-    }' data-precio=${producto.precio} type='number' value='0'>`;
+    }' data-precio=${producto.precio} type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
   });
 }
 
@@ -28,7 +28,7 @@ async function getCombos() {
       2
     )}</span></span><input class='texto price-producto form-control' data-nombre='${
       producto.nombre
-    }' data-precio=${producto.precio} type='number' value='0'>`;
+    }' data-precio=${producto.precio} type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
   });
 }
 

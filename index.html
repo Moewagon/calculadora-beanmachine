@@ -22,7 +22,7 @@
     <div id="lista-productos">
       <div id="descuento-container">
         <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#productos">Mostrar/ocultar lista de productos</button>
-        <input id="descuento" class="form-control" type="number" placeholder="Descuento (%)">
+        <input id="descuento" class="form-control" type="number" min=0 oninput="validity.valid||(value='');" placeholder="Descuento (%)">
       </div>
       <div id="productos" class="collapse">
         <h2>Productos</h2>
