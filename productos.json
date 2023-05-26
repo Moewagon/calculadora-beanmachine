@@ -48,6 +48,26 @@
 		"precio": 45
 	},
 	{
+		"nombre": "Café con helado",
+		"precio": 40
+	},
+	{
+		"nombre": "Bubble Tea",
+		"precio": 40
+	},
+	{
+		"nombre": "Ice Tea",
+		"precio": 40
+	},
+	{
+		"nombre": "Tila",
+		"precio": 50
+	},
+	{
+		"nombre": "Agua",
+		"precio": 22
+	},
+	{
 		"nombre": "Donut",
 		"precio": 22
 	},
@@ -94,5 +114,21 @@
 	{
 		"nombre": "Tarta de arándanos",
 		"precio": 45
+	},
+	{
+		"nombre": "Tarta de chocolate",
+		"precio": 55
+	},
+	{
+		"nombre": "Cheesecake",
+		"precio": 65
+	},
+	{
+		"nombre": "Tarta de cumpleaños",
+		"precio": 200
+	},
+	{
+		"nombre": "Tarta de bodas",
+		"precio": 1000
 	}
 ]
