@@ -1,134 +1,167 @@
 [
 	{
 		"nombre": "Original Coffee",
+    "tipo": "Bebida",
 		"precio": 35
 	},
 	{
 		"nombre": "Original Coffee and milk",
+    "tipo": "Bebida",
 		"precio": 35
 	},
 	{
 		"nombre": "Original Coffee NC",
+    "tipo": "Bebida",
 		"precio": 35
 	},
 	{
 		"nombre": "Chocolate Albean",
+    "tipo": "Bebida",
 		"precio": 40
 	},
 	{
 		"nombre": "Dark Coffee",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Caramel Coffee",
+    "tipo": "Bebida",
 		"precio": 50
 	},
 	{
 		"nombre": "Pumpkin Coffee",
+    "tipo": "Bebida",
 		"precio": 50
 	},
 	{
 		"nombre": "Café capuccino",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Café irlandés",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Café jamaiquino",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Café tricolor",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Café tribu",
+    "tipo": "Bebida",
 		"precio": 45
 	},
 	{
 		"nombre": "Café con helado",
+    "tipo": "Bebida",
 		"precio": 40
 	},
 	{
 		"nombre": "Bubble Tea",
+    "tipo": "Bebida",
 		"precio": 40
 	},
 	{
 		"nombre": "Ice Tea",
+    "tipo": "Bebida",
 		"precio": 40
 	},
 	{
 		"nombre": "Tila",
+    "tipo": "Bebida",
 		"precio": 50
 	},
 	{
 		"nombre": "Agua",
+    "tipo": "Bebida",
 		"precio": 22
 	},
 	{
 		"nombre": "Donut",
+    "tipo": "Comida",
 		"precio": 22
 	},
 	{
 		"nombre": "Churros de Bean Machine",
+    "tipo": "Comida",
 		"precio": 35
 	},
 	{
 		"nombre": "Pretzel de Café",
+    "tipo": "Comida",
 		"precio": 35
 	},
 	{
 		"nombre": "Galleta de café",
+    "tipo": "Comida",
 		"precio": 20
 	},
 	{
 		"nombre": "Croissant",
+    "tipo": "Comida",
 		"precio": 35
 	},
 	{
 		"nombre": "Banana Split",
+    "tipo": "Comida",
 		"precio": 40
 	},
 	{
 		"nombre": "Muffin",
+    "tipo": "Comida",
 		"precio": 40
 	},
 	{
 		"nombre": "Waffles",
+    "tipo": "Comida",
 		"precio": 40
 	},
 	{
 		"nombre": "Hotcakes",
+    "tipo": "Comida",
 		"precio": 40
 	},
 	{
 		"nombre": "Tarta Bean Bean",
+    "tipo": "Comida",
 		"precio": 45
 	},
 	{
 		"nombre": "Tarta de manzana",
+    "tipo": "Comida",
 		"precio": 45
 	},
 	{
 		"nombre": "Tarta de arándanos",
+    "tipo": "Comida",
 		"precio": 45
 	},
 	{
 		"nombre": "Tarta de chocolate",
+    "tipo": "Comida",
 		"precio": 55
 	},
 	{
 		"nombre": "Cheesecake",
+    "tipo": "Comida",
 		"precio": 65
 	},
 	{
 		"nombre": "Tarta de cumpleaños",
+    "tipo": "Comida",
 		"precio": 200
 	},
 	{
 		"nombre": "Tarta de bodas",
+    "tipo": "Comida",
 		"precio": 1000
 	}
 ]

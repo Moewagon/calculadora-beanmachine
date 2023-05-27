@@ -7,11 +7,15 @@ async function getProductos() {
     let itemList = document.createElement("div");
     listado.appendChild(itemList);
     itemList.classList.add("list-group-item");
-    itemList.innerHTML = `<span class='precio'>${producto.nombre} $<span class='numero'>${producto.precio.toFixed(
+    itemList.innerHTML = `<span class='precio'>${
+      producto.nombre
+    } $<span class='numero'>${producto.precio.toFixed(
       2
     )}</span></span><input class='texto price-producto form-control' data-nombre='${
       producto.nombre
-    }' data-precio=${producto.precio} type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
+    }' data-precio=${
+      producto.precio
+    } type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
   });
 }
 
@@ -24,11 +28,15 @@ async function getCombos() {
     let itemList = document.createElement("div");
     listado.appendChild(itemList);
     itemList.classList.add("list-group-item");
-    itemList.innerHTML = `<span class='precio'>${producto.nombre} $<span class='numero'>${producto.precio.toFixed(
+    itemList.innerHTML = `<span class='precio'>${
+      producto.nombre
+    } $<span class='numero'>${producto.precio.toFixed(
       2
     )}</span></span><input class='texto price-producto form-control' data-nombre='${
       producto.nombre
-    }' data-precio=${producto.precio} type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
+    }' data-precio=${
+      producto.precio
+    } type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
   });
 }
 
@@ -41,10 +49,10 @@ function eliminarDiv(boton) {
   var arrayTotales = listaPedido.getElementsByClassName("pedido-card-total");
   console.log(arrayTotales);
   var sumaTotales = 0;
-  for (var i=0; i<arrayTotales.length; i++){
+  for (var i = 0; i < arrayTotales.length; i++) {
     sumaTotales += parseInt(arrayTotales[i].innerHTML);
   }
-  document.getElementById("total-pedidos").innerHTML=sumaTotales;
+  document.getElementById("total-pedidos").innerHTML = sumaTotales;
 }
 
 window.onload = async () => {
@@ -59,6 +67,8 @@ window.onload = async () => {
     let listaPedidos = document.getElementById("lista-pedidos");
     let total = 0;
 
+    document.getElementById("descuento").value = 0;
+
     for (let i = 0; i < listaProductos.length; i++) {
       if (!descuento && listaProductos[i].value != 0) {
         pedido.push({
@@ -71,14 +81,18 @@ window.onload = async () => {
 
       if (descuento && listaProductos[i].value != 0) {
         let precioDescontado =
-          (listaProductos[i].dataset.precio * listaProductos[i].value * descuento) / 100;
+          (listaProductos[i].dataset.precio *
+            listaProductos[i].value *
+            descuento) /
+          100;
         pedido.push({
           nombre: listaProductos[i].dataset.nombre,
           precio: listaProductos[i].dataset.precio,
           cantidad: listaProductos[i].value,
         });
         total +=
-          listaProductos[i].dataset.precio * listaProductos[i].value - precioDescontado;
+          listaProductos[i].dataset.precio * listaProductos[i].value -
+          precioDescontado;
       }
       listaProductos[i].value = 0;
     }
@@ -93,7 +107,9 @@ window.onload = async () => {
     divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span> $<br><br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
     listaPedidos.appendChild(divPedido);
 
-    let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent);
+    let ingresosPedidos = parseInt(
+      document.getElementById("total-pedidos").textContent
+    );
 
     ingresosPedidos += total;
 
@@ -101,6 +117,4 @@ window.onload = async () => {
 
     precioTotal.textContent = `PRECIO TOTAL = $ ${total.toFixed(2)}`;
   });
-
-  
 };

@@ -1,0 +1,49 @@
+[
+  {
+    "nombre": "FBI - 1x1 a 50x50",
+    "precio": "0",
+    "descuento": "10"
+  },
+
+  {
+    "nombre": "FBI - 51x51 a 100x100",
+    "precio": "0",
+    "descuento": "15"
+  },
+
+  {
+    "nombre": "BCSO - Original Coffee/Tarta manzana 5x5",
+    "precio": "200",
+    "descuento": "0"
+  },
+
+  {
+    "nombre": "BCSO - Original Coffee/Tarta manzana 10x10",
+    "precio": "400",
+    "descuento": "0"
+  },
+
+  {
+    "nombre": "BCSO - Dark Coffee/Tarta de manzana 5x5",
+    "precio": "225",
+    "descuento": "0"
+  },
+
+  {
+    "nombre": "BCSO - Dark Coffee/Tarta de manzana 10x10",
+    "precio": "450",
+    "descuento": "0"
+  },
+
+  {
+    "nombre": "BCSO - 1x1 a 50x50",
+    "precio": "0",
+    "descuento": "15"
+  },
+
+  {
+    "nombre": "BCSO - 51x51 a 100x100",
+    "precio": "0",
+    "descuento": "20"
+  }
+]
