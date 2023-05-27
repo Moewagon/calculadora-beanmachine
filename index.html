@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="productos.js" defer></script>
 </head>
 
 <body>
@@ -22,17 +25,27 @@
     <div id="lista-productos">
       <div id="descuento-container">
         <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#productos">Mostrar/ocultar lista de productos</button>
+        <select id="select-convenios" class="form-control" value="Selecciona un convenio"></select>
         <input id="descuento" class="form-control" type="number" min=0 oninput="validity.valid||(value='');" placeholder="Descuento (%)">
       </div>
       <div id="productos" class="collapse">
         <h2>Productos</h2>
-        <div id="productos-lista" class="list-group"></div>
+        <div class="listadoble">
+          <div id="productos-lista-bebidas" class="list-group"></div>
+          <div id="productos-lista" class="list-group"></div>
+        </div>
       </div>
       <hr>
       <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#combos">Mostrar/ocultar lista de combos</button>
       <div id="combos" class="collapse">
         <h2>Combos</h2>
         <div id="combos-lista" class="list-group"></div>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#combosconvenios">Mostrar/ocultar lista de combos de convenios</button>
+      <div id="combosconvenios" class="collapse">
+        <h2>Combos Convenios</h2>
+        <div id="combosconvenios-lista" class="list-group"></div>
       </div>
       <hr>
       <div id="calculator-container">
@@ -44,9 +57,7 @@
       <h2>Lista de pedidos - <span>Ingresos: $ <span id="total-pedidos">0</span></span></h2>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="productos.js" defer></script>
+  
 </body>
 
 </html>

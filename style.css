@@ -21,7 +21,7 @@ body {
 
 .precio {
   font-weight: normal;
-   /* margin-left: 10px;*/
+  /* margin-left: 10px;*/
 }
 
 .texto {
@@ -131,4 +131,21 @@ body {
 
 .botonborrar:hover{
   background-color: #121314;
+}
+
+.form-control{
+  width: 20%;
+}
+
+.listadoble {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-group {
+  flex-basis: 48%;
+}
+
+.faccion {
+  font-weight: bold;
 }

@@ -1,49 +1,92 @@
 [
   {
-    "nombre": "FBI - 1x1 a 50x50",
+    "faccion": "SAMS",
+    "nombre": "Descuento base",
+    "descuento": "20"
+  },
+
+  {
+    "faccion": "SAMS",
+    "nombre": "50x50",
+    "descuento": "30"
+  },
+
+  {
+    "faccion": "SAMS",
+    "nombre": "100x100",
+    "descuento": "30"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "1x1 a 50x50",
+    "descuento": "15"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "51x51 a 100x100",
+    "descuento": "20"
+  },
+
+  {
+    "faccion": "L.S CUSTOMS",
+    "nombre": "1 a 50 unidades",
+    "descuento": "15"
+  },
+
+  {
+    "faccion": "L.S CUSTOMS",
+    "nombre": "51 a 100 unidades",
+    "descuento": "20"
+  },
+
+  {
+    "faccion": "SOUTH SIDE SERPENTS",
+    "nombre": "50x50 (SOLO JUEVES)",
     "precio": "0",
+    "descuento": "30"
+  },
+
+  {
+    "faccion": "DOWNTOWN CAB",
+    "nombre": "1 a 50 unidades",
+    "descuento": "15"
+  },
+
+  {
+    "faccion": "DOWNTOWN CAB",
+    "nombre": "51 a 100 unidades",
+    "descuento": "20"
+  },
+
+  {
+    "faccion": "WEAZEL NEWS",
+    "nombre": " 1 a 50 unidades (SOLO MARTES)",
     "descuento": "10"
   },
 
   {
-    "nombre": "FBI - 51x51 a 100x100",
-    "precio": "0",
+    "faccion": "WEAZEL NEWS",
+    "nombre": "51 a 100 unidades (SOLO MARTES)",
     "descuento": "15"
   },
 
   {
-    "nombre": "BCSO - Original Coffee/Tarta manzana 5x5",
-    "precio": "200",
-    "descuento": "0"
+    "faccion": "WEAZEL NEWS",
+    "nombre": "101 a 200 unidades (SOLO MARTES)",
+    "descuento": "20"
   },
 
   {
-    "nombre": "BCSO - Original Coffee/Tarta manzana 10x10",
-    "precio": "400",
-    "descuento": "0"
-  },
-
-  {
-    "nombre": "BCSO - Dark Coffee/Tarta de manzana 5x5",
-    "precio": "225",
-    "descuento": "0"
-  },
-
-  {
-    "nombre": "BCSO - Dark Coffee/Tarta de manzana 10x10",
-    "precio": "450",
-    "descuento": "0"
-  },
-
-  {
-    "nombre": "BCSO - 1x1 a 50x50",
-    "precio": "0",
+    "faccion": "BENNY'S",
+    "nombre": "1 a 50 unidades",
     "descuento": "15"
   },
 
   {
-    "nombre": "BCSO - 51x51 a 100x100",
-    "precio": "0",
+    "faccion": "BENNY'S",
+    "nombre": "51 a 100 unidades",
     "descuento": "20"
   }
 ]

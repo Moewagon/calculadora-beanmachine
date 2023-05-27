@@ -1,0 +1,37 @@
+[
+  {
+    "faccion": "LSPD",
+    "nombre": "Original Coffee/Tarta de manzana 5x5",
+    "precio": "200"
+  },
+
+  {
+    "faccion": "LSPD",
+    "nombre": "Original Coffee/Tarta de manzana 10x10",
+    "precio": "400"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "Original Coffee/Tarta manzana 5x5",
+    "precio": "200"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "Original Coffee/Tarta manzana 10x10",
+    "precio": "400"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "Dark Coffee/Tarta de manzana 5x5",
+    "precio": "225"
+  },
+
+  {
+    "faccion": "BCSO",
+    "nombre": "Dark Coffee/Tarta de manzana 10x10",
+    "precio": "450"
+  }
+]

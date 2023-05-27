@@ -1,167 +1,167 @@
 [
-	{
-		"nombre": "Original Coffee",
+  {
+    "nombre": "Original Coffee",
     "tipo": "Bebida",
-		"precio": 35
-	},
-	{
-		"nombre": "Original Coffee and milk",
+    "precio": 35
+  },
+  {
+    "nombre": "Original Coffee and milk",
     "tipo": "Bebida",
-		"precio": 35
-	},
-	{
-		"nombre": "Original Coffee NC",
+    "precio": 35
+  },
+  {
+    "nombre": "Original Coffee NC",
     "tipo": "Bebida",
-		"precio": 35
-	},
-	{
-		"nombre": "Chocolate Albean",
+    "precio": 35
+  },
+  {
+    "nombre": "Chocolate Albean",
     "tipo": "Bebida",
-		"precio": 40
-	},
-	{
-		"nombre": "Dark Coffee",
+    "precio": 40
+  },
+  {
+    "nombre": "Dark Coffee",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Caramel Coffee",
+    "precio": 45
+  },
+  {
+    "nombre": "Caramel Coffee",
     "tipo": "Bebida",
-		"precio": 50
-	},
-	{
-		"nombre": "Pumpkin Coffee",
+    "precio": 50
+  },
+  {
+    "nombre": "Pumpkin Coffee",
     "tipo": "Bebida",
-		"precio": 50
-	},
-	{
-		"nombre": "Café capuccino",
+    "precio": 50
+  },
+  {
+    "nombre": "Café capuccino",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Café irlandés",
+    "precio": 45
+  },
+  {
+    "nombre": "Café irlandés",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Café jamaiquino",
+    "precio": 45
+  },
+  {
+    "nombre": "Café jamaiquino",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Café tricolor",
+    "precio": 45
+  },
+  {
+    "nombre": "Café tricolor",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Café tribu",
+    "precio": 45
+  },
+  {
+    "nombre": "Café tribu",
     "tipo": "Bebida",
-		"precio": 45
-	},
-	{
-		"nombre": "Café con helado",
+    "precio": 45
+  },
+  {
+    "nombre": "Café con helado",
     "tipo": "Bebida",
-		"precio": 40
-	},
-	{
-		"nombre": "Bubble Tea",
+    "precio": 40
+  },
+  {
+    "nombre": "Bubble Tea",
     "tipo": "Bebida",
-		"precio": 40
-	},
-	{
-		"nombre": "Ice Tea",
+    "precio": 40
+  },
+  {
+    "nombre": "Ice Tea",
     "tipo": "Bebida",
-		"precio": 40
-	},
-	{
-		"nombre": "Tila",
+    "precio": 40
+  },
+  {
+    "nombre": "Tila",
     "tipo": "Bebida",
-		"precio": 50
-	},
-	{
-		"nombre": "Agua",
+    "precio": 50
+  },
+  {
+    "nombre": "Agua",
     "tipo": "Bebida",
-		"precio": 22
-	},
-	{
-		"nombre": "Donut",
+    "precio": 22
+  },
+  {
+    "nombre": "Donut",
     "tipo": "Comida",
-		"precio": 22
-	},
-	{
-		"nombre": "Churros de Bean Machine",
+    "precio": 22
+  },
+  {
+    "nombre": "Churros de Bean Machine",
     "tipo": "Comida",
-		"precio": 35
-	},
-	{
-		"nombre": "Pretzel de Café",
+    "precio": 35
+  },
+  {
+    "nombre": "Pretzel de Café",
     "tipo": "Comida",
-		"precio": 35
-	},
-	{
-		"nombre": "Galleta de café",
+    "precio": 35
+  },
+  {
+    "nombre": "Galleta de café",
     "tipo": "Comida",
-		"precio": 20
-	},
-	{
-		"nombre": "Croissant",
+    "precio": 20
+  },
+  {
+    "nombre": "Croissant",
     "tipo": "Comida",
-		"precio": 35
-	},
-	{
-		"nombre": "Banana Split",
+    "precio": 35
+  },
+  {
+    "nombre": "Banana Split",
     "tipo": "Comida",
-		"precio": 40
-	},
-	{
-		"nombre": "Muffin",
+    "precio": 40
+  },
+  {
+    "nombre": "Muffin",
     "tipo": "Comida",
-		"precio": 40
-	},
-	{
-		"nombre": "Waffles",
+    "precio": 40
+  },
+  {
+    "nombre": "Waffles",
     "tipo": "Comida",
-		"precio": 40
-	},
-	{
-		"nombre": "Hotcakes",
+    "precio": 40
+  },
+  {
+    "nombre": "Hotcakes",
     "tipo": "Comida",
-		"precio": 40
-	},
-	{
-		"nombre": "Tarta Bean Bean",
+    "precio": 40
+  },
+  {
+    "nombre": "Tarta Bean Bean",
     "tipo": "Comida",
-		"precio": 45
-	},
-	{
-		"nombre": "Tarta de manzana",
+    "precio": 45
+  },
+  {
+    "nombre": "Tarta de manzana",
     "tipo": "Comida",
-		"precio": 45
-	},
-	{
-		"nombre": "Tarta de arándanos",
+    "precio": 45
+  },
+  {
+    "nombre": "Tarta de arándanos",
     "tipo": "Comida",
-		"precio": 45
-	},
-	{
-		"nombre": "Tarta de chocolate",
+    "precio": 45
+  },
+  {
+    "nombre": "Tarta de chocolate",
     "tipo": "Comida",
-		"precio": 55
-	},
-	{
-		"nombre": "Cheesecake",
+    "precio": 55
+  },
+  {
+    "nombre": "Cheesecake",
     "tipo": "Comida",
-		"precio": 65
-	},
-	{
-		"nombre": "Tarta de cumpleaños",
+    "precio": 65
+  },
+  {
+    "nombre": "Tarta de cumpleaños",
     "tipo": "Comida",
-		"precio": 200
-	},
-	{
-		"nombre": "Tarta de bodas",
+    "precio": 200
+  },
+  {
+    "nombre": "Tarta de bodas",
     "tipo": "Comida",
-		"precio": 1000
-	}
+    "precio": 1000
+  }
 ]
