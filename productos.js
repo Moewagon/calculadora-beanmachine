@@ -97,7 +97,7 @@ window.onload = async () => {
     let listaProductos = document.getElementsByClassName("price-producto");
     let listaPedidos = document.getElementById("lista-pedidos");
     let total = 0;
-
+    document.getElementById("select-convenios").selectedIndex = 0;
     document.getElementById("descuento").value = 0;
 
     for (let i = 0; i < listaProductos.length; i++) {
@@ -128,25 +128,26 @@ window.onload = async () => {
       listaProductos[i].value = 0;
     }
 
-    let divPedido = document.createElement("div");
-    divPedido.classList.add("pedido-card");
+    if (total !== 0) {
+      let divPedido = document.createElement("div");
+      divPedido.classList.add("pedido-card");
 
-    pedido.forEach((producto) => {
-      divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio}$<p>`;
-    });
+      pedido.forEach((producto) => {
+        divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio} $<p>`;
+      });
 
-    divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span> $<br><br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
-    listaPedidos.appendChild(divPedido);
+      // Obtener la hora actual local
+      const horaActual = new Date().toLocaleTimeString();
 
-    let ingresosPedidos = parseInt(
-      document.getElementById("total-pedidos").textContent
-    );
+      divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span> $ <br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
+      listaPedidos.appendChild(divPedido);
 
-    ingresosPedidos += total;
+      let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent);
+      ingresosPedidos += total;
+      document.getElementById("total-pedidos").textContent = ingresosPedidos;
 
-    document.getElementById("total-pedidos").textContent = ingresosPedidos;
-
-    precioTotal.textContent = `PRECIO TOTAL = $ ${total.toFixed(2)}`;
+      precioTotal.textContent = `PRECIO TOTAL = $ ${total.toFixed(2)}`;
+    }
   });
 };
 
