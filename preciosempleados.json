@@ -2,166 +2,166 @@
   {
     "nombre": "Original Coffee",
     "tipo": "Bebida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Original Coffee and milk",
     "tipo": "Bebida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Original Coffee NC",
     "tipo": "Bebida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Chocolate Albean",
     "tipo": "Bebida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Dark Coffee",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 30
   },
   {
     "nombre": "Caramel Coffee",
     "tipo": "Bebida",
-    "precio": 50
+    "precio": 30
   },
   {
     "nombre": "Pumpkin Coffee",
     "tipo": "Bebida",
-    "precio": 50
+    "precio": 30
   },
   {
     "nombre": "Café capuccino",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Café irlandés",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Café jamaiquino",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Café tricolor",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Café tribu",
     "tipo": "Bebida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Café con helado",
     "tipo": "Bebida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Bubble Tea",
     "tipo": "Bebida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Ice Tea",
     "tipo": "Bebida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Tila",
     "tipo": "Bebida",
-    "precio": 50
+    "precio": 30
   },
   {
     "nombre": "Agua",
     "tipo": "Bebida",
-    "precio": 22
+    "precio": 12
   },
   {
     "nombre": "Donut",
     "tipo": "Comida",
-    "precio": 22
+    "precio": 15
   },
   {
     "nombre": "Churros de Bean Machine",
     "tipo": "Comida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Pretzel de Café",
     "tipo": "Comida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Galleta de café",
     "tipo": "Comida",
-    "precio": 20
+    "precio": 12
   },
   {
     "nombre": "Croissant",
     "tipo": "Comida",
-    "precio": 35
+    "precio": 20
   },
   {
     "nombre": "Banana Split",
     "tipo": "Comida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Muffin",
     "tipo": "Comida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Waffles",
     "tipo": "Comida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Hotcakes",
     "tipo": "Comida",
-    "precio": 40
+    "precio": 25
   },
   {
     "nombre": "Tarta Bean Bean",
     "tipo": "Comida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Tarta de manzana",
     "tipo": "Comida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Tarta de arándanos",
     "tipo": "Comida",
-    "precio": 45
+    "precio": 25
   },
   {
     "nombre": "Tarta de chocolate",
     "tipo": "Comida",
-    "precio": 55
+    "precio": 25
   },
   {
     "nombre": "Cheesecake",
     "tipo": "Comida",
-    "precio": 65
+    "precio": 35
   },
   {
     "nombre": "Tarta de cumpleaños",
     "tipo": "Comida",
-    "precio": 200
+    "precio": 70
   },
   {
     "nombre": "Tarta de bodas",
     "tipo": "Comida",
-    "precio": 1000
+    "precio": 140
   }
 ]

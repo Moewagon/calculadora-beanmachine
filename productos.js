@@ -1,8 +1,31 @@
+document.getElementById("switchempleado").addEventListener("change", async () => {
+  await getProductos();
+});
+
 async function getProductos() {
-  let listaProductos = await fetch("./productos.json");
-  let productos = await listaProductos.json();
+  const switchEmpleado = document.querySelector("#switchempleado input[type='checkbox']");
   const listado = document.getElementById("productos-lista");
   const listadoBebidas = document.getElementById("productos-lista-bebidas");
+  
+  // Animación suave al ocultar la lista anterior
+  fadeOut(listado);
+  fadeOut(listadoBebidas);
+
+  // Esperar a que termine la animación
+  await wait(500);
+
+  listado.innerHTML = ""; // Limpiar el contenido actual de la lista
+  listadoBebidas.innerHTML = ""; // Limpiar el contenido actual de la lista de bebidas
+
+  let listaProductos;
+
+  if (switchEmpleado.checked) {
+    listaProductos = await fetch("./preciosempleados.json");
+  } else {
+    listaProductos = await fetch("./productos.json");
+  }
+
+  let productos = await listaProductos.json();
 
   productos.forEach((producto) => {
     //compruebo el tipo de producto, si es comida uso itemList, si es bebida uso itemListBebidas//
@@ -32,7 +55,58 @@ async function getProductos() {
       } type='number' value='0' min=0 oninput="validity.valid||(value='');">`;
     }
   });
+
+  // Animación suave al mostrar la lista actualizada
+  fadeIn(listado);
+  fadeIn(listadoBebidas);
 }
+
+function fadeOut(element) {
+  let opacity = 1;
+  const start = performance.now();
+
+  function animate(timestamp) {
+    const elapsed = timestamp - start;
+    opacity = 1 - elapsed / 500; // Duración de la animación: 500ms
+
+    if (opacity <= 0) {
+      opacity = 0;
+      element.style.opacity = opacity;
+    } else {
+      element.style.opacity = opacity;
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+function fadeIn(element) {
+  let opacity = 0;
+  const start = performance.now();
+
+  function animate(timestamp) {
+    const elapsed = timestamp - start;
+    opacity = elapsed / 500; // Duración de la animación: 500ms
+
+    if (opacity >= 1) {
+      opacity = 1;
+      element.style.opacity = opacity;
+    } else {
+      element.style.opacity = opacity;
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+//
+
 
 async function getCombos() {
   let listaCombos = await fetch("./combos.json");
@@ -114,8 +188,7 @@ window.onload = async () => {
         let precioDescontado =
           (listaProductos[i].dataset.precio *
             listaProductos[i].value *
-            descuento) /
-          100;
+            descuento) / 100;
         pedido.push({
           nombre: listaProductos[i].dataset.nombre,
           precio: listaProductos[i].dataset.precio,
@@ -139,14 +212,14 @@ window.onload = async () => {
       // Obtener la hora actual local
       const horaActual = new Date().toLocaleTimeString();
 
-      divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span> $ <br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
+      divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span>$<br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
       listaPedidos.appendChild(divPedido);
 
       let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent);
       ingresosPedidos += total;
       document.getElementById("total-pedidos").textContent = ingresosPedidos;
 
-      precioTotal.textContent = `PRECIO TOTAL = $ ${total.toFixed(2)}`;
+      precioTotal.innerHTML = `<p class="preciototal">TOTAL = ${total.toFixed(2)}$</p>`;
     }
   });
 };
@@ -189,3 +262,22 @@ async function getConvenios() {
     inputDescuento.value = descuento;
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll("[data-toggle='collapse']");
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      const icon = this.querySelector("i");
+      const buttonText = this.textContent.trim();
+      if (buttonText.includes("Mostrar")) {
+        this.innerHTML = '<i class="bi bi-caret-right"></i> Ocultar ' + buttonText.substring(8);
+        icon.classList.remove("bi-caret-down");
+        icon.classList.add("bi-caret-right");
+      } else {
+        this.innerHTML = '<i class="bi bi-caret-down"></i> Mostrar ' + buttonText.substring(8);
+        icon.classList.remove("bi-caret-right");
+        icon.classList.add("bi-caret-down");
+      }
+    });
+  });
+});

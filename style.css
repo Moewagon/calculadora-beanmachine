@@ -1,18 +1,19 @@
 body {
-  background-color: #1b1c1e;
+  background-color: #120c03;
   color: #f7f7f7;
+  font-family: "Nunito", sans-serif;
 }
 
 .navbar-inverse {
-  background-color: #212529;
-  border-color: #292b2c;
+  background-color: #342209;
+  border-color: #614f2e;
   height: 70px;
 }
 
 .list-group-item {
   display: flex;
-  background-color: #212529;
-  border-color: #292b2c;
+  background-color: #452e0c;
+  border-color: #614f2e;
   color: #f7f7f7;
   justify-content: space-between;
   align-items: center;
@@ -37,13 +38,14 @@ body {
 
 .well {
   background-color: #212529;
-  border-color: #292b2c;
+  border-color: #614f2e;
   color: #f7f7f7;
 }
 
 #calculator-container {
   display: flex;
   justify-content: space-between;
+  /*align-items: center;*/
 }
 
 #descuento-container {
@@ -75,11 +77,11 @@ body {
 .pedido-card {
   width: 50%;
   padding: 10px 10px;
-  background-color: #212529;
-  border-color: #292b2c;
+  background-color: #452e0c;
+  border-color: #614f2e;
   color: #f7f7f7;
   margin-bottom: 10px;
-  border: 1.5px #292b2c solid;
+  border: 1.5px #614f2e solid;
   border-radius: 4px;
 }
 
@@ -101,19 +103,19 @@ body {
   vertical-align: middle;
 }
 
-.btn{
-  background-color: #212529;
-  border: 1.5px #292b2c solid;
+.btn {
+  background-color: #452e0c;
+  border: 1.5px #614f2e solid;
   border-radius: 4px;
 }
 
-.btn:hover{
-  background-color: #121314;
+.btn:hover {
+  background-color: #231706;
 }
 
-.botonborrar{
-  background-color: #212529;
-  border: 1.5px #292b2c solid;
+.botonborrar {
+  background-color: #684612;
+  border: 1.5px #614f2e solid;
   border-radius: 4px;
   display: inline-block;
   padding: 6px 12px;
@@ -123,17 +125,17 @@ body {
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle; 
+  vertical-align: middle;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
 }
 
-.botonborrar:hover{
-  background-color: #121314;
+.botonborrar:hover {
+  background-color: #231706;
 }
 
-.form-control{
+.form-control {
   width: 20%;
 }
 
@@ -148,4 +150,98 @@ body {
 
 .faccion {
   font-weight: bold;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #452e11;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #e4ac50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e4ac50;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*
+.navbar-right {
+  margin-top: 18px;
+  margin-right: 20px;
+}
+*/
+.textodescuentoempleado {
+  margin-top: 9px;
+  margin-right: 5px;
+}
+
+.listado-productos {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.listado-productos.fade-out {
+  opacity: 0;
+}
+
+.preciototal {
+  background-color: #452e0c;
+  border-color: #614f2e;
+  color: #f7f7f7;
+  margin-left: 5px;
+  border: 1.5px #614f2e solid;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
 }
