@@ -85,6 +85,11 @@
     "precio": 25
   },
   {
+    "nombre": "Granizado de Limón",
+    "tipo": "Bebida",
+    "precio": 25
+  },
+  {
     "nombre": "Donut",
     "tipo": "Comida",
     "precio": 25
