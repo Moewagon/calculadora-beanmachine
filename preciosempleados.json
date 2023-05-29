@@ -82,7 +82,12 @@
   {
     "nombre": "Agua",
     "tipo": "Bebida",
-    "precio": 12
+    "precio": 15
+  },
+  {
+    "nombre": "Granizado de Limón",
+    "tipo": "Bebida",
+    "precio": 15
   },
   {
     "nombre": "Donut",
