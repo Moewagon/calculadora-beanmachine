@@ -8,8 +8,8 @@ App web para calcular precios y almacenar temporalmente recuento de caja y stock
 
 ## Screenshots
 
-![Main](https://ibb.co/nQ7G2Xr)
-![Full Page](https://ibb.co/tDQZs6W)
+![Main](https://i.ibb.co/qmNSGHB/image.png)
+![Full Page](https://i.ibb.co/KWbNqg3/image.png)
 
 ## Authors
 
