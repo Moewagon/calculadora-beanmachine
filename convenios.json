@@ -42,7 +42,7 @@
   },
 
   {
-    "faccion": "SOUTH SIDE SERPENTS",
+    "faccion": "SOUTH SIDE SERPENTS (Pedido Semanal)",
     "nombre": "50x50",
     "precio": "0",
     "descuento": "30"
@@ -62,31 +62,38 @@
 
   {
     "faccion": "WEAZEL NEWS",
-    "nombre": " 1 a 50 unidades (SOLO MARTES)",
+    "nombre": " 1 a 50 unidades",
     "descuento": "10"
   },
 
   {
     "faccion": "WEAZEL NEWS",
-    "nombre": "51 a 100 unidades (SOLO MARTES)",
+    "nombre": "51 a 100 unidades",
     "descuento": "15"
   },
 
   {
     "faccion": "WEAZEL NEWS",
-    "nombre": "101 a 200 unidades (SOLO MARTES)",
+    "nombre": "101 a 200 unidades",
     "descuento": "20"
   },
 
   {
-    "faccion": "BENNY'S",
+    "faccion": "State Police",
     "nombre": "1 a 50 unidades",
     "descuento": "15"
   },
 
   {
-    "faccion": "BENNY'S",
+    "faccion": "STATE POLICE",
     "nombre": "51 a 100 unidades",
     "descuento": "20"
+    },
+  
+  {
+    "faccion": "STATE POLICE (Pedido Semanal)",
+    "nombre": "50x50",
+    "precio": "0",
+    "descuento": "30"
   }
 ]
