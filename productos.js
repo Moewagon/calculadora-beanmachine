@@ -206,13 +206,13 @@ window.onload = async () => {
       divPedido.classList.add("pedido-card");
 
       pedido.forEach((producto) => {
-        divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio} $<p>`;
+        divPedido.innerHTML += `<p>${producto.cantidad}x - ${producto.nombre} - ${producto.precio} $</p>`;
       });
 
       // Obtener la hora actual local
       const horaActual = new Date().toLocaleTimeString();
 
-      divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span>$<br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
+      divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span>$<br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></p>`;
       listaPedidos.appendChild(divPedido);
 
       let ingresosPedidos = parseFloat(document.getElementById("total-pedidos").textContent);
