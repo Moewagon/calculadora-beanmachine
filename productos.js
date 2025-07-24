@@ -28,7 +28,7 @@ async function getProductos() {
   let productos = await listaProductos.json();
 
   productos.forEach((producto) => {
-    //compruebo el tipo de producto, si es comida uso itemList, si es bebida uso itemListBebidas//
+    // Compruebo el tipo de producto: si es comida uso itemList, si es bebida uso itemListBebidas
     if (producto.tipo == "Bebida") {
       let itemListBebidas = document.createElement("div");
       listadoBebidas.appendChild(itemListBebidas);
