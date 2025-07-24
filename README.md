@@ -39,8 +39,3 @@ El servidor expone las siguientes rutas:
 - `POST /tickets` guarda un ticket del usuario autenticado enviando `{ items: [], total: 0 }`.
 
 Los tickets se persisten en el archivo `users.json`.
-
-### Login en el frontend
-
-Al abrir `index.html` verás un formulario de usuario y contraseña.
-Tras iniciar sesión, los tickets se cargarán desde el servidor y cada nuevo pedido se guardará automáticamente. Usa el botón "Logout" para cerrar sesión.
