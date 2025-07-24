@@ -281,3 +281,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+// Utilidad para calcular el total de una lista de productos
+function calcularTotal(items, descuento = 0) {
+  let total = 0;
+  for (const item of items) {
+    const precio = parseFloat(item.precio);
+    const cantidad = parseFloat(item.cantidad);
+    if (descuento) {
+      const precioDescontado = (precio * cantidad * descuento) / 100;
+      total += precio * cantidad - precioDescontado;
+    } else {
+      total += precio * cantidad;
+    }
+  }
+  return total;
+}
+
+// Exportar la función cuando se ejecute en Node (para las pruebas)
+if (typeof module !== "undefined") {
+  module.exports = { calcularTotal };
+}
