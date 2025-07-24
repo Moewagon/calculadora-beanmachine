@@ -11,6 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="productos.js" defer></script>
+  <script src="auth.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -23,6 +24,15 @@
       </div>
     </div>
   </nav>
+  <div id="auth-container" class="container" style="margin-top:10px;">
+    <form id="login-form" class="form-inline">
+      <input id="username" class="form-control" placeholder="Usuario">
+      <input id="password" type="password" class="form-control" placeholder="Contraseña">
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <button id="logout-btn" class="btn btn-default" style="display:none;margin-top:10px;">Logout</button>
+    <p id="login-status"></p>
+  </div>
   <div class="main">
     <div id="lista-productos">
       <div id="descuento-container">

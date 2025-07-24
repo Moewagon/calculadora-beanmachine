@@ -222,6 +222,9 @@ if (typeof window !== "undefined") {
       document.getElementById("total-pedidos").textContent = ingresosPedidos;
 
       precioTotal.innerHTML = `<p class="preciototal">TOTAL = ${total.toFixed(2)}$</p>`;
+      if (typeof apiSaveTicket !== "undefined" && window.loggedIn) {
+        apiSaveTicket({ items: pedido, total }).catch(() => {});
+      }
     }
   });
   };
