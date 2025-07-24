@@ -153,7 +153,7 @@ function eliminarDiv(boton) {
   console.log(arrayTotales);
   var sumaTotales = 0;
   for (var i = 0; i < arrayTotales.length; i++) {
-    sumaTotales += parseInt(arrayTotales[i].innerHTML);
+    sumaTotales += parseFloat(arrayTotales[i].innerHTML);
   }
   document.getElementById("total-pedidos").innerHTML = sumaTotales;
 }
@@ -215,7 +215,7 @@ window.onload = async () => {
       divPedido.innerHTML += `<p>Total del pedido: <span class="pedido-card-total">${total}</span>$<br><br>Hora: ${horaActual}<br><button class="botonborrar" onclick="eliminarDiv(this)"><i class="bi bi-trash"></i></button></i><p>`;
       listaPedidos.appendChild(divPedido);
 
-      let ingresosPedidos = parseInt(document.getElementById("total-pedidos").textContent);
+      let ingresosPedidos = parseFloat(document.getElementById("total-pedidos").textContent);
       ingresosPedidos += total;
       document.getElementById("total-pedidos").textContent = ingresosPedidos;
 
