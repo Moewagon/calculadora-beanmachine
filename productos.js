@@ -1,6 +1,10 @@
-document.getElementById("switchempleado").addEventListener("change", async () => {
-  await getProductos();
-});
+if (typeof document !== "undefined") {
+  document
+    .getElementById("switchempleado")
+    .addEventListener("change", async () => {
+      await getProductos();
+    });
+}
 
 async function getProductos() {
   const switchEmpleado = document.querySelector("#switchempleado input[type='checkbox']");
@@ -105,8 +109,6 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-//
-
 
 async function getCombos() {
   let listaCombos = await fetch("./combos.json");
@@ -150,7 +152,6 @@ function eliminarDiv(boton) {
   divFinal.removeChild(divAbuelo);
   var listaPedido = document.getElementById("lista-pedidos");
   var arrayTotales = listaPedido.getElementsByClassName("pedido-card-total");
-  console.log(arrayTotales);
   var sumaTotales = 0;
   for (var i = 0; i < arrayTotales.length; i++) {
     sumaTotales += parseFloat(arrayTotales[i].innerHTML);
@@ -158,11 +159,12 @@ function eliminarDiv(boton) {
   document.getElementById("total-pedidos").innerHTML = sumaTotales;
 }
 
-window.onload = async () => {
-  await getProductos();
-  await getCombos();
-  await getCombosconvenios();
-  await getConvenios();
+if (typeof window !== "undefined") {
+  window.onload = async () => {
+    await getProductos();
+    await getCombos();
+    await getCombosconvenios();
+    await getConvenios();
 
   document.getElementById("calcular").addEventListener("click", (e) => {
     let pedido = [];
@@ -222,7 +224,8 @@ window.onload = async () => {
       precioTotal.innerHTML = `<p class="preciototal">TOTAL = ${total.toFixed(2)}$</p>`;
     }
   });
-};
+  };
+}
 
 async function getConvenios() {
   let listaConvenios = await fetch("./convenios.json");
@@ -263,24 +266,30 @@ async function getConvenios() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll("[data-toggle='collapse']");
-  buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
-      const icon = this.querySelector("i");
-      const buttonText = this.textContent.trim();
-      if (buttonText.includes("Mostrar")) {
-        this.innerHTML = '<i class="bi bi-caret-right"></i> Ocultar ' + buttonText.substring(8);
-        icon.classList.remove("bi-caret-down");
-        icon.classList.add("bi-caret-right");
-      } else {
-        this.innerHTML = '<i class="bi bi-caret-down"></i> Mostrar ' + buttonText.substring(8);
-        icon.classList.remove("bi-caret-right");
-        icon.classList.add("bi-caret-down");
-      }
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll("[data-toggle='collapse']");
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const icon = this.querySelector("i");
+        const buttonText = this.textContent.trim();
+        if (buttonText.includes("Mostrar")) {
+          this.innerHTML =
+            '<i class="bi bi-caret-right"></i> Ocultar ' +
+            buttonText.substring(8);
+          icon.classList.remove("bi-caret-down");
+          icon.classList.add("bi-caret-right");
+        } else {
+          this.innerHTML =
+            '<i class="bi bi-caret-down"></i> Mostrar ' +
+            buttonText.substring(8);
+          icon.classList.remove("bi-caret-right");
+          icon.classList.add("bi-caret-down");
+        }
+      });
     });
   });
-});
+}
 
 // Utilidad para calcular el total de una lista de productos
 function calcularTotal(items, descuento = 0) {
